@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Background color for better visibility */
+    z-index: 1000; /* Ensure the header is on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for separation */
+}
+
+.header__container-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px 0; */
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header__container-content__logo img {
+    width: 150px; /* Setting a fixed width for the logo */
+}
+
+.header__container-content .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__container-content .main-nav li {
+    list-style-type: none;
+}
+
+.header__container-content .main-nav li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.header__container-content .main-nav li a:hover {
+    color: #A33F3F; /* Add a hover effect */
+}
+
+.hero {
+    height: 60vh; /* Correct the calc usage */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('background.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero__container-content {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(10px); /* Safari */
+    backdrop-filter: blur(10px); /* Other modern browsers */
+    border-radius: 10px; /* Adding some rounding for better aesthetics */
+}
+
+.hero__container-content__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.hero__container-content__description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero__container-content__button {
+    background-color: #A33F3F;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px; /* Adding some rounding for better aesthetics */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.hero__container-content__button:hover {
+    background-color: #902C2C; /* Add a hover effect */
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    margin-top: -11rem;
+    transform: rotate(180deg);
+    overflow: hidden; /* To hide any overflow */
+}
+
+.divider svg {
+    display: block;
+    width: 100%;
+}
+
+/* Line Divider */
+.line {
+    width: 5%;
+    height: 2px;
+    background-color: #D49CA4;
+    margin: 1rem 0;
+}
+
+/* Services */
+.services {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    /* text-align: center; */
+}
+
+.services__container-content {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services__container-content .description {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.services__container-content__title {
+    font-size: 2rem;
+}
+.services__container-content .cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+.services__container-content .cards-container .card{
+    width: 100%;
+    max-width: 30rem;
+    
+    
+}
+
