@@ -16,7 +16,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for separation */
 }
 
-.header__container .content {
+.header__container > .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,4 +75,72 @@
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
+}
+
+
+/* Hero */
+.hero__container {
+    height: 70vh; /* Correct the calc usage */
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    background-image: url('background.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    border-image: fill 0 linear-gradient(#0001, #000);
+}
+
+.hero__container > .content{
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.hero__container .content > h1{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #E4DADA;
+}
+
+.hero__container .content > p{
+    color: #E4DADA;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.hero__container .content > a {
+    background-color: #A33F3F;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Adding some rounding for better aesthetics */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.hero__container .content > a :hover {
+    background-color: #902C2C; /* Add a hover effect */
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    margin-top: -2rem;
+    transform: rotate(180deg);
+    overflow: hidden; /* To hide any overflow */
+}
+
+.divider svg {
+    display: block;
+    width: 100%;
+}
+
+/* Line Divider */
+.line {
+    width: 5%;
+    height: 2px;
+    background-color: #D49CA4;
+    margin: 1rem 0;
 }
