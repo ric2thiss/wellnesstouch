@@ -103,6 +103,7 @@
     font-weight: 400;
     font-size: 1.2rem;
     font-style: normal;
+    letter-spacing: 5px;
 }
 .hero__container .content > h1{
     font-size: 2.3rem;
@@ -135,7 +136,7 @@
 /* Divider */
 .divider {
     width: 100%;
-    margin-top: -2rem;
+    margin-top: -2.1rem;
     transform: rotate(180deg);
     overflow: hidden; /* To hide any overflow */
 }
@@ -147,8 +148,36 @@
 
 /* Line Divider */
 .line {
-    width: 5%;
+    width: 10%;
     height: 2px;
     background-color: #D49CA4;
     margin: 1rem 0;
 }
+
+
+/* Services Section */
+
+.services__container > .content{
+    max-width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.services__container > .content > h2{
+    font-size: 1.375rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #080808;
+    text-align: center;
+}
+.services__container > .content > p{
+    font-size: .8rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
