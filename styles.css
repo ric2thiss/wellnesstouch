@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global Style such as holder of container and containers */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Background color for better visibility */
+    z-index: 1000; /* Ensure the header is on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for separation */
+}
+
+.header__container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Website Logo design */
+.header__container .content .logo img {
+    width: 150px; /* Setting a fixed width for the logo */
+}
+
+/* Toggle Menu */
+.toggleMenu {
+    display: none; /* Hide the checkbox */
+}
+
+.toggle__label {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10%;
+    z-index: 10000;
+    cursor: pointer;
+    
+}
+
+#checkbox:checked ~ nav {
+    transform: translateX(-100%);
+}
+#checkbox:checked ~ .toggle__label{
+    color: #ffff;
+}
+
+.header__container .content nav {
+    position: fixed;
+    right: -100%;
+    transform: translateX(100%);
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #111111;
+    padding: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.header__container .content nav .main-nav {
+    list-style-type: none;
+    margin: 5rem 0;
+}
+
+.header__container .content nav .main-nav li {
+    margin: 1rem 0;
+}
+
+.header__container .content nav .main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
